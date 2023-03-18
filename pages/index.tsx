@@ -6,6 +6,7 @@ const Home = () => {
       <Head>
         <title>Home</title>
       </Head>
+
       <main>
         <p>Mikey Lau</p>
       </main>
