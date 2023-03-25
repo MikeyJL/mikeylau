@@ -10,7 +10,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
     }, []);
 
     return (
-        <div className="relative h-full p-8">
+        <div className="relative flex h-full flex-col p-8">
             <Logo className="mb-4" />
 
             <Particles
@@ -46,7 +46,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                         },
                         links: {
                             color: "#000000",
-                            distance: 150,
+                            distance: 100,
                             enable: true,
                             opacity: 0.1,
                             width: 1,
@@ -69,7 +69,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                                 enable: true,
                                 area: 400,
                             },
-                            value: 40,
+                            value: 80,
                         },
                         opacity: {
                             value: 0.1,
