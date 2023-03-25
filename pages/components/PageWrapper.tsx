@@ -2,6 +2,7 @@ import { FC, PropsWithChildren, useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import type { Engine } from "tsparticles-engine";
+import Logo from "./Logo";
 
 const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
     const particlesInit = useCallback(async (engine: Engine) => {
@@ -9,10 +10,13 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
     }, []);
 
     return (
-        <>
+        <div className="relative p-8">
+            <Logo className="mb-4" />
+
             <Particles
                 id="tsparticles"
                 init={particlesInit}
+                className="absolute top-0"
                 options={{
                     fpsLimit: 120,
                     background: {
@@ -20,6 +24,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                             value: "transparent",
                         },
                     },
+                    fullScreen: false,
                     interactivity: {
                         events: {
                             onHover: {
@@ -81,7 +86,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
             />
 
             {children}
-        </>
+        </div>
     );
 };
 
