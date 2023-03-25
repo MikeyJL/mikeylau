@@ -1,8 +1,9 @@
 import Head from "next/head";
+import { PageWrapper } from "./components";
 
 const Home = () => {
   return (
-    <>
+    <PageWrapper>
       <Head>
         <title>Mikey Lau</title>
       </Head>
@@ -10,7 +11,7 @@ const Home = () => {
       <main>
         <p>Content</p>
       </main>
-    </>
+    </PageWrapper>
   );
 };
 
