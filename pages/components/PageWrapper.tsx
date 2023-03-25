@@ -10,13 +10,13 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
     }, []);
 
     return (
-        <div className="relative p-8">
+        <div className="relative h-full p-8">
             <Logo className="mb-4" />
 
             <Particles
                 id="tsparticles"
                 init={particlesInit}
-                className="absolute top-0"
+                className="absolute inset-0"
                 options={{
                     fpsLimit: 120,
                     background: {
@@ -61,7 +61,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                                 default: "bounce",
                             },
                             random: false,
-                            speed: 6,
+                            speed: 2,
                             straight: false,
                         },
                         number: {

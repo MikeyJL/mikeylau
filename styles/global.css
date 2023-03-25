@@ -7,3 +7,7 @@
 html {
 	font-family: Quicksand;
 }
+
+#__next {
+	@apply h-full;
+}
