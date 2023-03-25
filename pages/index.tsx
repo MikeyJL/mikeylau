@@ -4,11 +4,11 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Mikey Lau</title>
       </Head>
 
       <main>
-        <p>Mikey Lau</p>
+        <p>Content</p>
       </main>
     </>
   );
