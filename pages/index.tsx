@@ -1,5 +1,10 @@
 import { PageWrapper } from "@/components";
-import { Achievements, NavButton } from "@/components/pages/index";
+import {
+  About,
+  Achievements,
+  NavButton,
+  Stack,
+} from "@/components/pages/index";
 import Head from "next/head";
 import { useState } from "react";
 
@@ -10,15 +15,19 @@ const Home = () => {
   const [view, setView] = useState<View>("About");
 
   const handleSwitchView = (view: View) => {
-    setView(view)
-  }
+    setView(view);
+  };
 
   const viewMarkup = (() => {
-    switch(view){
-      case 'Achievements':
-        return <Achievements />
+    switch (view) {
+      case "About":
+        return <About />;
+      case "Achievements":
+        return <Achievements />;
+      case "Stack":
+        return <Stack />;
     }
-  })()
+  })();
 
   return (
     <PageWrapper>
@@ -27,15 +36,19 @@ const Home = () => {
       </Head>
 
       <main className="z-10 flex flex-1 flex-col">
-        <div className="mt-8 flex flex-col items-start space-y-4 animate-fade-in">
+        <div className="mt-8 flex animate-fade-in flex-col items-start space-y-4">
           {views.map((item) => (
-            <NavButton key={item} active={view === item} onClick={() => handleSwitchView(item)}>{item}</NavButton>
+            <NavButton
+              key={item}
+              active={view === item}
+              onClick={() => handleSwitchView(item)}
+            >
+              {item}
+            </NavButton>
           ))}
         </div>
 
-        <div className="mt-auto ml-auto flex w-fit flex-col">
-          {viewMarkup}
-        </div>
+        <div className="mt-auto ml-auto flex w-fit flex-col">{viewMarkup}</div>
       </main>
     </PageWrapper>
   );

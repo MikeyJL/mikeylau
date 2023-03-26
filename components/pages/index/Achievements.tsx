@@ -35,9 +35,9 @@ const achievements: Achievement[] = [
 
 const Achievements = () => {
   return (
-    <>
+    <div className="flex flex-col space-y-4">
       {achievements.map((item) => (
-        <div key={item.name} className="mt-4">
+        <div key={item.name}>
           {/* Heading */}
           {item.url ? (
             <a
@@ -59,7 +59,7 @@ const Achievements = () => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
