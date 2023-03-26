@@ -48,7 +48,7 @@ const Home = () => {
           ))}
         </div>
 
-        <div className="mt-auto flex w-fit flex-col sm:ml-auto">
+        <div className="mt-auto flex flex-col sm:ml-auto sm:w-80">
           {viewMarkup}
         </div>
       </main>

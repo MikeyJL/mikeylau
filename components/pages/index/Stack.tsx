@@ -38,7 +38,7 @@ const softwareStack: string[] = [
 
 const Stack: FC = () => {
   return (
-    <div className="flex max-w-lg flex-col space-y-4">
+    <div className="flex flex-col space-y-4">
       <p>
         <b>Data Stack</b> | {dataStack.join(", ")}
       </p>
