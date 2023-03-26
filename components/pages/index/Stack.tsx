@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 const dataStack: string[] = [
   "Apache Spark",
   "Snowflake",
@@ -34,7 +36,7 @@ const softwareStack: string[] = [
   "Shopify",
 ];
 
-const Stack = () => {
+const Stack: FC = () => {
   return (
     <div className="flex max-w-lg flex-col space-y-4">
       <p>

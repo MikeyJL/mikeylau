@@ -8,7 +8,7 @@ import {
 import Head from "next/head";
 import { useState } from "react";
 
-const views = ["About", "Achievements", "Stack", "Contact"] as const;
+const views = ["About", "Achievements", "Stack"] as const;
 type View = (typeof views)[any];
 
 const Home = () => {

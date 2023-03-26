@@ -1,4 +1,5 @@
 import { ExternalLink } from "@/components/svgs";
+import { FC } from "react";
 
 type Achievement = {
   name: string;
@@ -33,7 +34,7 @@ const achievements: Achievement[] = [
   },
 ];
 
-const Achievements = () => {
+const Achievements: FC = () => {
   return (
     <div className="flex flex-col space-y-4">
       {achievements.map((item) => (
