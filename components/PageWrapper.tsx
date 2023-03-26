@@ -46,9 +46,9 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                         },
                         links: {
                             color: "#B91C1C",
-                            distance: 100,
+                            distance: 120,
                             enable: true,
-                            opacity: 0.1,
+                            opacity: 0.12,
                             width: 1,
                         },
                         collisions: {
@@ -67,12 +67,12 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                         number: {
                             density: {
                                 enable: true,
-                                area: 400,
+                                area: 500,
                             },
-                            value: 80,
+                            value: 100,
                         },
                         opacity: {
-                            value: 0.1,
+                            value: 0.16,
                         },
                         shape: {
                             type: "circle",
