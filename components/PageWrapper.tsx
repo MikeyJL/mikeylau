@@ -18,6 +18,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                 init={particlesInit}
                 className="absolute inset-0"
                 options={{
+                    smooth: true,
                     fpsLimit: 120,
                     background: {
                         color: {
