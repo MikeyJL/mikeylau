@@ -5,7 +5,7 @@ const Document = () => {
     <Html lang="en">
       <Head />
 
-      <body className="h-screen bg-red-50 p-12">
+      <body className="h-screen bg-red-50 p-4 sm:p-12">
         <div className="h-full rounded border border-red-300">
           <Main />
           <NextScript />
