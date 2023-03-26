@@ -15,7 +15,7 @@ const achievements: Achievement[] = [
     date: "October 22",
   },
   {
-    name: "CFO-CF02 Snowflake",
+    name: "Snowflake CFO-CF02",
     description: "Passed",
     date: "March 23",
     url: "https://www.credly.com/badges/eb55e937-7518-4a94-941f-9b51fd579514/public_url",
@@ -28,7 +28,7 @@ const achievements: Achievement[] = [
   },
   {
     name: "IAPP CIPP/E",
-    description: "Pending",
+    description: "Planned",
     date: "December 23",
     url: "https://iapp.org/certify/cippe",
   },
