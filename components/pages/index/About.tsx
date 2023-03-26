@@ -37,7 +37,7 @@ const About: FC = () => {
             key={item.label}
             href={item.url}
             target="_blank"
-            className="flex items-center font-semibold transition-opacity hover:opacity-60"
+            className="flex w-fit items-center font-semibold transition-opacity hover:opacity-60"
           >
             <div className="mr-2 h-6 w-6">{item.icon}</div>
             <p>{item.label}</p>
