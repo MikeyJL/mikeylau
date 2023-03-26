@@ -5,7 +5,7 @@
 @import url("_font.css");
 
 html {
-	font-family: Quicksand;
+	font-family: Quicksand, sans-serif;
 	@apply text-red-700;
 }
 
