@@ -36,7 +36,7 @@ const Home = () => {
       </Head>
 
       <main className="z-10 flex flex-1 flex-col">
-        <div className="mt-8 flex animate-fade-in flex-col items-start space-y-4">
+        <div className="my-8 flex animate-fade-in flex-col items-start space-y-4">
           {views.map((item) => (
             <NavButton
               key={item}

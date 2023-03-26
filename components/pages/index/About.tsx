@@ -25,7 +25,7 @@ const links: { label: string; icon: ReactNode; url: string }[] = [
 const About: FC = () => {
   return (
     <div className="space-y-8">
-      <div>
+      <div className="space-y-4">
         {information.map((item) => (
           <p key={item}>{item}</p>
         ))}
