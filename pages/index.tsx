@@ -1,40 +1,24 @@
 import { PageWrapper } from "@/components";
-import { ExternalLink } from "@/components/svgs";
+import { Achievements, NavButton } from "@/components/pages/index";
 import Head from "next/head";
+import { useState } from "react";
 
-type Achievement = {
-  name: string;
-  description: string;
-  date: string;
-  url?: string;
-};
+const views = ["About", "Achievements", "Stack", "Contact"] as const;
+type View = (typeof views)[any];
 
 const Home = () => {
-  const achievements: Achievement[] = [
-    {
-      name: "MSc Applied AI & Data Science",
-      description: "Distinction",
-      date: "October 22",
-    },
-    {
-      name: "CFO-CF02 Snowflake",
-      description: "Passed",
-      date: "March 23",
-      url: "https://www.credly.com/badges/eb55e937-7518-4a94-941f-9b51fd579514/public_url",
-    },
-    {
-      name: "DAMA CDMP Associate",
-      description: "Pending",
-      date: "July 23",
-      url: "https://www.dama.org/cpages/cdmp-information",
-    },
-    {
-      name: "IAPP CIPP/E",
-      description: "Pending",
-      date: "December 23",
-      url: "https://iapp.org/certify/cippe",
-    },
-  ];
+  const [view, setView] = useState<View>("About");
+
+  const handleSwitchView = (view: View) => {
+    setView(view)
+  }
+
+  const viewMarkup = (() => {
+    switch(view){
+      case 'Achievements':
+        return <Achievements />
+    }
+  })()
 
   return (
     <PageWrapper>
@@ -43,31 +27,14 @@ const Home = () => {
       </Head>
 
       <main className="z-10 flex flex-1 flex-col">
-        <div className="mt-auto ml-auto flex w-fit flex-col">
-          {/* Achievements */}
-          {achievements.map((item) => (
-            <div key={item.name} className="mt-4">
-              {/* Heading */}
-              {item.url ? (
-                <a
-                  href={item.url}
-                  target="_blank"
-                  className="flex items-center transition-opacity hover:opacity-60"
-                >
-                  <p className="font-semibold">{item.name}</p>
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </a>
-              ) : (
-                <p className="font-semibold">{item.name}</p>
-              )}
-
-              {/* Description */}
-              <div className="flex items-center text-sm">
-                {item.description && <p>{item.description} |&nbsp;</p>}
-                <p>{item.date}</p>
-              </div>
-            </div>
+        <div className="mt-8 flex flex-col items-start space-y-4 animate-fade-in">
+          {views.map((item) => (
+            <NavButton key={item} active={view === item} onClick={() => handleSwitchView(item)}>{item}</NavButton>
           ))}
+        </div>
+
+        <div className="mt-auto ml-auto flex w-fit flex-col">
+          {viewMarkup}
         </div>
       </main>
     </PageWrapper>

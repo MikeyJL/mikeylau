@@ -11,7 +11,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
 
     return (
         <div className="relative flex h-full flex-col p-8">
-            <Logo className="mb-4" />
+            <Logo className="mb-4 animate-fade-in" />
 
             <Particles
                 id="tsparticles"
