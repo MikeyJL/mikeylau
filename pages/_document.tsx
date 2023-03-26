@@ -5,8 +5,8 @@ const Document = () => {
     <Html lang="en">
       <Head />
 
-      <body className="h-screen bg-gray-100 p-12">
-        <div className="h-full rounded border border-gray-300">
+      <body className="h-screen bg-red-50 p-12">
+        <div className="h-full rounded border border-red-300">
           <Main />
           <NextScript />
         </div>

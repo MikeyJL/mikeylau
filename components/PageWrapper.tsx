@@ -42,10 +42,10 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }) => {
                     },
                     particles: {
                         color: {
-                            value: "#000000",
+                            value: "#B91C1C",
                         },
                         links: {
-                            color: "#000000",
+                            color: "#B91C1C",
                             distance: 100,
                             enable: true,
                             opacity: 0.1,

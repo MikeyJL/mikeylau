@@ -6,6 +6,7 @@
 
 html {
 	font-family: Quicksand;
+	@apply text-red-700;
 }
 
 #__next {
