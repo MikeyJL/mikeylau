@@ -1,23 +1,23 @@
 import { FC } from "react";
 
 const dataStack: string[] = [
+  "Python",
+  "SQL",
+  "Terraform",
+  "AWS",
+  "Docker",
   "Apache Spark",
+  "Apache Iceberg",
+  "Delta Lake",
   "Snowflake",
   "Fivetran",
-  "Deepnote",
-  "AWS",
-  "Delta Lake",
-  "SQL",
-  "R",
-  "Tensorflow (Keras)",
-  "PyTorch",
-  "NumPy",
-  "SciPy",
-  "Plotly",
   "Streamlit",
-  "scikit-learn",
+  "Plotly",
+  "PyTorch",
+  "numpy",
   "pandas",
   "seaborn",
+  "etc",
 ];
 const softwareStack: string[] = [
   "React",
@@ -32,7 +32,6 @@ const softwareStack: string[] = [
   "Django",
   "FastAPI",
   "SQLAcademy",
-  "Docker",
   "Shopify",
 ];
 

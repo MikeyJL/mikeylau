@@ -23,14 +23,32 @@ const achievements: Achievement[] = [
   {
     name: "DAMA CDMP Associate",
     description: "Pending",
-    date: "July 23",
+    date: "October 23",
     url: "https://www.dama.org/cpages/cdmp-information",
   },
   {
-    name: "IAPP CIPP/E",
+    name: "AWS Cloud Practitioner",
+    description: "Planned",
+    date: "November 23",
+    url: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+  },
+  {
+    name: "AWS Associate Solutions Architect",
     description: "Planned",
     date: "December 23",
-    url: "https://iapp.org/certify/cippe",
+    url: "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+  },
+  {
+    name: "AWS Data Analytics",
+    description: "Planned",
+    date: "January 23",
+    url: "https://aws.amazon.com/certification/certified-data-analytics-specialty/",
+  },
+  {
+    name: "BCS Foundation Data Protection",
+    description: "Planned",
+    date: "February 24",
+    url: "https://www.bcs.org/qualifications-and-certifications/certifications-for-professionals/gdpr-and-data-protection-certifications/bcs-foundation-certificate-in-data-protection/",
   },
 ];
 
