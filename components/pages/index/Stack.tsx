@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 const dataStack: string[] = [
+  "Java",
   "Python",
   "SQL",
   "Terraform",
@@ -8,7 +9,6 @@ const dataStack: string[] = [
   "Docker",
   "Apache Spark",
   "Apache Iceberg",
-  "Delta Lake",
   "Snowflake",
   "Fivetran",
   "Streamlit",
