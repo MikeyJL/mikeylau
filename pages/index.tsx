@@ -1,5 +1,15 @@
+import ThreeDCanvas from "@/components/ThreeDCanvas";
+
 const IndexPage = () => {
-  return <main>Content</main>;
+  return (
+    <>
+      <ThreeDCanvas />
+
+      <main>
+        <p>Content</p>
+      </main>
+    </>
+  );
 };
 
 export default IndexPage;
