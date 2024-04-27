@@ -3,10 +3,10 @@ import LinkedIn from "@/components/svgs/LinkedIn";
 import { FC, ReactNode } from "react";
 
 const information: string[] = [
-  "Born in Ipoh, Malaysia",
-  "Background in Software Engineering",
-  "Graduated with an MSc in Applied AI and Data Science",
-  "Working for a tech-for-good company",
+  "Malaysia — United Kingdom",
+  "MSc in Applied AI and Data Science",
+  "Practicing Kendoka [剣道家]",
+  "NeoVim is my go-to",
 ];
 
 const links: { label: string; icon: ReactNode; url: string }[] = [

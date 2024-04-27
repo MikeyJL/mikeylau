@@ -1,24 +1,22 @@
 import { FC } from "react";
 
+const cloudStack: string[] = [
+  "AWS",
+  "Terraform",
+  "Docker",
+  "GitHub"
+];
+
 const dataStack: string[] = [
+  "SQL",
   "Java",
   "Python",
-  "SQL",
-  "Terraform",
-  "AWS",
-  "Docker",
   "Apache Spark",
   "Apache Iceberg",
   "Snowflake",
   "Fivetran",
-  "Streamlit",
-  "Plotly",
-  "PyTorch",
-  "numpy",
-  "pandas",
-  "seaborn",
-  "etc",
 ];
+
 const softwareStack: string[] = [
   "React",
   "React Native",
@@ -32,17 +30,19 @@ const softwareStack: string[] = [
   "Django",
   "FastAPI",
   "SQLAcademy",
-  "Shopify",
 ];
 
 const Stack: FC = () => {
   return (
     <div className="flex flex-col space-y-4">
       <p>
-        <b>Data Stack</b> | {dataStack.join(", ")}
+        <b>Software</b> | {softwareStack.join(", ")}
       </p>
       <p>
-        <b>Software Stack</b> | {softwareStack.join(", ")}
+        <b>Data</b> | {dataStack.join(", ")}
+      </p>
+      <p>
+        <b>Cloud</b> | {cloudStack.join(", ")}
       </p>
     </div>
   );

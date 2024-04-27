@@ -18,11 +18,10 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-particles": "^2.9.3",
     "react-use": "^17.4.0",
     "three": "^0.150.1",
-    "tsparticles": "^2.9.3",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

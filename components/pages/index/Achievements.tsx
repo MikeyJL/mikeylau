@@ -53,26 +53,6 @@ const achievements: Achievement[] = [
     description: "Planned",
     date: "October 24",
   },
-  {
-    name: "AWS Database — Specialty",
-    description: "Planned",
-    date: "TBD",
-  },
-  {
-    name: "AWS Advanced Networking — Specialty",
-    description: "Planned",
-    date: "TBD",
-  },
-  {
-    name: "BCS Foundation Data Protection",
-    description: "Planned",
-    date: "TBD",
-  },
-  {
-    name: "DAMA CDMP Associate",
-    description: "Planned",
-    date: "TBD",
-  },
 ];
 
 const Achievements: FC = () => {
