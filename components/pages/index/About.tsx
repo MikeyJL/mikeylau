@@ -1,5 +1,4 @@
-import { Certificate } from "@/components/svgs";
-import LinkedIn from "@/components/svgs/LinkedIn";
+import { Certificate, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { FC, ReactNode } from "react";
 
 const information: string[] = [
@@ -11,13 +10,18 @@ const information: string[] = [
 
 const links: { label: string; icon: ReactNode; url: string }[] = [
   {
+    label: "GitHub",
+    icon: <GithubLogo size={24} />,
+    url: "https://github.com/MikeyJL",
+  },
+  {
     label: "LinkedIn",
-    icon: <LinkedIn />,
+    icon: <LinkedinLogo size={24} />,
     url: "https://www.linkedin.com/in/mikey-lau/",
   },
   {
     label: "Credly",
-    icon: <Certificate />,
+    icon: <Certificate size={24} />,
     url: "https://www.credly.com/users/mikey-lau",
   },
 ];
@@ -39,7 +43,7 @@ const About: FC = () => {
             target="_blank"
             className="flex w-fit items-center font-semibold transition-opacity hover:opacity-60"
           >
-            <div className="mr-2 h-6 w-6">{item.icon}</div>
+            <div className="mr-2">{item.icon}</div>
             <p>{item.label}</p>
           </a>
         ))}
