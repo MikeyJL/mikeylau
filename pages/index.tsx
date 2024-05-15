@@ -1,4 +1,3 @@
-import DOTS from "vanta/dist/vanta.dots.min";
 import { Logo } from "@/components";
 import {
   About,
@@ -8,11 +7,11 @@ import {
 } from "@/components/pages/index";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
+import DOTS from "vanta/dist/vanta.dots.min";
 
 type Vanta = {
   destroy: () => void;
 };
-
 
 const views = ["About", "Achievements", "Stack"] as const;
 type View = (typeof views)[any];
@@ -65,7 +64,7 @@ const Home = () => {
         <Logo className="mb-8 animate-fade-in" />
 
         <div className="flex">
-          <div className="w-2/3 flex animate-fade-in flex-col items-start space-y-4">
+          <div className="flex w-2/3 animate-fade-in flex-col items-start space-y-4">
             {views.map((item) => (
               <NavButton
                 key={item}
@@ -77,16 +76,14 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="w-1/3">
-            {viewMarkup}
-          </div>
+          <div className="w-1/3">{viewMarkup}</div>
         </div>
       </main>
 
+      {/* eslint-disable-next-line */}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     </>
   );
 };
 
 export default Home;
-
