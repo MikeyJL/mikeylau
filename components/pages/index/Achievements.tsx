@@ -39,12 +39,12 @@ const achievements: Achievement[] = [
     url: "https://www.credly.com/badges/d9e156df-4549-4da2-a47d-cee259d233a6/public_url",
   },
   {
-    name: "AWS Data Engineer — Associate",
+    name: "AWS Solutions Architect — Professional",
     description: "In-progress",
     date: "June 24",
   },
   {
-    name: "AWS Solutions Architect — Professional",
+    name: "AWS Data Engineer — Associate",
     description: "Planned",
     date: "August 24",
   },

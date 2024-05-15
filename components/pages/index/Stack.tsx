@@ -1,11 +1,6 @@
 import { FC } from "react";
 
-const cloudStack: string[] = [
-  "AWS",
-  "Terraform",
-  "Docker",
-  "GitHub"
-];
+const infrastructureStack: string[] = ["AWS", "Terraform", "Docker", "GitHub"];
 
 const dataStack: string[] = [
   "SQL",
@@ -42,7 +37,7 @@ const Stack: FC = () => {
         <b>Data</b> | {dataStack.join(", ")}
       </p>
       <p>
-        <b>Cloud</b> | {cloudStack.join(", ")}
+        <b>Infrastructure</b> | {infrastructureStack.join(", ")}
       </p>
     </div>
   );
